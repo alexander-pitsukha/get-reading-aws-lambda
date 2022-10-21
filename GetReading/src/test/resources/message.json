@@ -1,0 +1,42 @@
+{
+  "version": "2.0",
+  "routeKey": "ANY /getReadingLambda",
+  "rawPath": "/default/getReadingLambda",
+  "rawQueryString": "",
+  "headers": {
+    "accept": "*/*",
+    "accept-encoding": "gzip, deflate, br",
+    "authorization": "AWS4-HMAC-SHA256 Credential=ABCDEFG/20210118/us-east-1/execute-api/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=qwertyui1234567890",
+    "content-length": "202",
+    "content-type": "text/plain",
+    "host": "s5792l55b6.execute-api.us-east-1.amazonaws.com",
+    "postman-token": "31da579f-fd0a-4235-9df3-e7026a45825a",
+    "user-agent": "PostmanRuntime/7.26.8",
+    "x-amz-content-sha256": "0a619e6a54283c1debdae8a49041a5b1f8375bbba8da7fe7af829808210f7600",
+    "x-amz-date": "20210118T135918Z",
+    "x-amzn-trace-id": "Root=1-60059437-48475d673a2d28a6683c8fb8",
+    "x-forwarded-for": "46.216.226.107",
+    "x-forwarded-port": "443",
+    "x-forwarded-proto": "https"
+  },
+  "requestContext": {
+    "accountId": "123456789",
+    "apiId": "s5792l55b6",
+    "domainName": "s5792l55b6.execute-api.us-east-1.amazonaws.com",
+    "domainPrefix": "s5792l55b6",
+    "http": {
+      "method": "POST",
+      "path": "/default/myLambda",
+      "protocol": "HTTP/1.1",
+      "sourceIp": "46.216.226.107",
+      "userAgent": "PostmanRuntime/7.26.8"
+    },
+    "requestId": "ZWQYqjtDIAMEMJA=",
+    "routeKey": "ANY /myLambda",
+    "stage": "default",
+    "time": "18/Jan/2021:13:59:19 +0000",
+    "timeEpoch": 1610978359308
+  },
+  "body": "GatewayType=3261\r\nGatewayID=326171836000163F\r\nGatewayVer=43 (2018-07-31)\r\nDeviceType=3261\r\nDeviceID=326171836000163F\r\nDeviceVer=43 (2018-07-31)\r\nExtensionID=01\r\nYear=2004\r\nMonth=01\r\nDay=01\r\nHour=05\r\nMinute=27\r\nSecond=00\r\nDataType=2\r\nValue1=113\r\nValue2=086\r\nValue3=087\r\nValue4=097\r\nValue5=0\r\nValue6=4\r\nValue7=0\r\nIMEI=359804087576635\r\nSIMID=89883030000051461090\r\n",
+  "isBase64Encoded": false
+}

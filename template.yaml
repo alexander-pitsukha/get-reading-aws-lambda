@@ -1,0 +1,34 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: SAM Template for get-reading-aws-lambda
+
+Globals:
+  Function:
+    Timeout: 20
+
+Resources:
+  GetReadingBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: get-reading
+  GetReadingFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: GetReading/target/get-reading-aws-lambda-1.0.jar
+      FunctionName: getReading
+      Handler: com.lwd.cleverrpm.app.aws.lambda.ReadingAwsLambda::handleRequest
+      Runtime: java11
+      MemorySize: 512
+      Events:
+        GetReading:
+          Type: Api
+          Properties:
+            Path: /get-reading
+            Method: post
+      Policies:
+        - AWSLambdaBasicExecutionRole
+        - AWSLambdaReadOnlyAccess
+        - AWSXrayWriteOnlyAccess
+        - AWSLambdaVPCAccessExecutionRole
+        - AmazonSQSFullAccess
+        - AmazonDynamoDBFullAccess
